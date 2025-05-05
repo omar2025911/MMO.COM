@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MMO — Your Request, Our Quest</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- AOS Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0b0c10;
+    color: #ffffff;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1f2833;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #66fcf1;
+  }
+  
+  nav a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #c5c6c7;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #66fcf1;
+  }
+  
+  .hero {
+    background: linear-gradient(120deg, #1f2833, #0b0c10);
+    text-align: center;
+    padding: 6rem 2rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 4rem;
+    color: #66fcf1;
+    animation: pulseGlow 3s ease-in-out infinite;
+  }
+  
+  .tagline {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    color: #c5c6c7;
+  }
+  
+  .section {
+    padding: 4rem 2rem;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .section.light {
+    background-color: #1f2833;
+    border-radius: 12px;
+  }
+  
+  h2 {
+    color: #66fcf1;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  p, li {
+    font-size: 1.1rem;
+    color: #c5c6c7;
+  }
+  
+  .services-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  
+  .services-list li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+  
+  form {
+    display: grid;
+    gap: 1rem;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  input, textarea {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  button {
+    background: #66fcf1;
+    border: none;
+    color: #0b0c10;
+    padding: 0.75rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #45a29e;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background: #1f2833;
+    color: #c5c6c7;
+  }
+  
+  /* Animated Glow */
+  @keyframes pulseGlow {
+    0%, 100% {
+      text-shadow: 0 0 10px #66fcf1, 0 0 20px #45a29e;
+    }
+    50% {
+      text-shadow: 0 0 5px #66fcf1, 0 0 10px #45a29e;
+    }
+  }
+  </style>
+<body>
+
+  <header class="navbar">
+    <div class="logo">MMO</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" data-aos="fade-in">
+    <div class="hero-content">
+      <h1 class="animated-glow">MMO</h1>
+      <p class="tagline">Your Request, Our Quest</p>
+    </div>
+  </section>
+
+  <section id="about" class="section" data-aos="fade-up">
+    <h2>About MMO</h2>
+    <p>We are a creative tech company building websites, games, animations, and custom domains. Every request is a new quest.</p>
+  </section>
+
+  <section id="services" class="section light" data-aos="fade-right">
+    <h2>Our Services</h2>
+    <ul class="services-list">
+      <li>🌐 Web Development</li>
+      <li>🎮 Game Design</li>
+      <li>🎞️ Animation & Motion</li>
+      <li>🌍 Domain Setup & Hosting</li>
+    </ul>
+  </section>
+
+  <section id="team" class="section" data-aos="fade-left">
+    <h2>Meet the Team</h2>
+    <p>Our talented creators bring your ideas to life with design, code, and magic.</p>
+  </section>
+
+  <section id="contact" class="section light" data-aos="fade-up">
+    <h2>Contact MMO</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Tell us your quest..." required></textarea>
+      <button type="submit">Start a Project</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MMO — All rights reserved.</p>
+  </footer>
+
+  <!-- AOS Animation Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
